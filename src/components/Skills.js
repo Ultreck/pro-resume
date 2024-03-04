@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Work = () => {
+const Skills = () => {
   return (
-    <div>
-      Work
+    <div className='text-gray-500'>
+      Skills
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptatem officiis dolorem eligendi explicabo maiores dolore consectetur expedita aperiam tenetur ipsam, amet quae laudantium placeat? Necessitatibus, sed fuga! Commodi, possimus.
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptatem officiis dolorem eligendi explicabo maiores dolore consectetur expedita aperiam tenetur ipsam, amet quae laudantium placeat? Necessitatibus, sed fuga! Commodi, possimus.
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptatem officiis dolorem eligendi explicabo maiores dolore consectetur expedita aperiam tenetur ipsam, amet quae laudantium placeat? Necessitatibus, sed fuga! Commodi, possimus.
@@ -19,4 +19,4 @@ const Work = () => {
   )
 }
 
-export default Work
+export default Skills
