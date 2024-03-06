@@ -17,7 +17,7 @@ const Home = () => {
   React.useEffect(() => {
     const options = {
           strings: [
-        ' A. Emmanuel Oluwatayese',
+        ' Emmanuel Oluwatayese',
       ],
       typeSpeed: 100,
       backSpeed: 50,
@@ -40,8 +40,8 @@ const Home = () => {
           <h1 className="text-[#64ffda] text-xl font-mono"  data-aos-duration="1000" data-aos="zoom-in-down">Hi, my name is </h1>
           <h1 data-aos="fade-down"
              data-aos-easing="linear"
-             data-aos-duration="1000" ref={el} className="text-[#d9eaff] h-16 md:text-6xl text-3xl font-bold mt-8">
-           
+             data-aos-duration="1000" className="text-[#d9eaff]  md:text-6xl text-3xl font-bold mt-8 mb-4">
+             A. <span className="text" ref={el}></span>
           </h1>
           <h2 data-aos="fade-right"  data-aos-duration="1000" className="text-[#8e98b6] text-3xl md:text-6xl font-bold ">
             I'm a full stack web developer.

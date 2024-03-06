@@ -6,7 +6,7 @@ import img2 from "../images/pro-pro.png";
 
 const Header = () => {
   const navigate = useNavigate();
-  const [hoverEffects, setHoverEffects] = useState(false)
+  const [hoverEffects, setHoverEffects] = useState(false);
   // const handleOnmounseOver = () => {};
   // const handleOnmounseLeave = () => {};
   const items = [

@@ -10,7 +10,7 @@ const Experience = () => {
 
   return (
     <div>
-      <div className="text mt-32 p-5 pb-20">
+      <div className="text mt-20 p-5 pb-20">
         <div className="text flex items-center">
           <h1
             data-aos="fade-down"
@@ -60,6 +60,8 @@ const Experience = () => {
             </ul>
           </div>
           <div
+            data-aos="fade-left"
+            data-aos-duration="500"
             className={`text w-3/4 ${
               index === 3 ? "" : "hidden"
             } pr-16 font-sans`}>
@@ -123,6 +125,8 @@ const Experience = () => {
           </div>
 
           <div
+            data-aos="fade-left"
+            data-aos-duration="500"
             className={`text w-3/4 ${
               index === 2 ? "" : "hidden"
             } pr-16 font-sans`}>
@@ -171,6 +175,8 @@ const Experience = () => {
           </div>
 
           <div
+            data-aos="fade-left"
+            data-aos-duration="500"
             className={`text w-3/4 ${
               index === 1 ? "" : "hidden"
             } pr-16 font-sans`}>

@@ -25,7 +25,7 @@ const About = () => {
           </h1>
           <hr className="w-60 border-[#233554]" />
         </div>
-        <div className="text-[#7f8fb0] mt-10 text flex gap-6">
+        <div className="text-[#7f8fb0] mt-6 text-sm flex gap-6">
           <div className="text w-3/5">
             <p className="text mb-4" data-aos="fade-right" data-aos-duration="1500" >
               I'm a passionate full-stack web developer with a journey that
