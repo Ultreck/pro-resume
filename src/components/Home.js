@@ -35,12 +35,12 @@ const Home = () => {
   })
   return (
     <div>
-      <div className="text w-full font-mono mt-20 pb-20 h-[90vh] md:px-20 px-12 flex items-center">
+      <div className="text w-full font-mono mt-24 pb-20 h-[90vh] px-5 flex items-center">
         <div className="text font-sans mx-auto">
           <h1 className="text-[#64ffda] text-xl font-mono"  data-aos-duration="1000" data-aos="zoom-in-down">Hi, my name is </h1>
           <h1 data-aos="fade-down"
              data-aos-easing="linear"
-             data-aos-duration="1000" className="text-[#d9eaff]  md:text-6xl text-3xl font-bold mt-8 mb-4">
+             data-aos-duration="1000" className="text-[#d9eaff]  md:text-6xl text-3xl font-bold mt-5 mb-4">
              A. <span className="text" ref={el}></span>
           </h1>
           <h2 data-aos="fade-right"  data-aos-duration="1000" className="text-[#8e98b6] text-3xl md:text-6xl font-bold ">

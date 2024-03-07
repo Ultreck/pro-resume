@@ -7,6 +7,7 @@ import { TbKeyframesFilled } from "react-icons/tb";
 import ProgressBar from "@ramonak/react-progress-bar";
 import CountUp from "react-countup";
 import { RiPercentFill } from "react-icons/ri";
+import { BsTools } from "react-icons/bs";
 
 const Skills = () => {
   const [index, setindex] = useState(1);
@@ -141,6 +142,32 @@ const Skills = () => {
               </span>
             </div>
           </div>
+          <div
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            className="text my-10 h-10 relative flex items-center"
+            onClick={() => setindex(4)}>
+            <BsTools 
+              onMouseOver={() => handleMouseHover(4)}
+              onMouseOut={handleMouseOut}
+              className={`hover:text-[#64ffda] cursor-pointer text-xl ${
+                index === 4 ? "text-[#64ffda]" : ""
+              }`}
+            />
+            <div
+              className={`text-[#c7ddf9] text-center absolute border-b-2 border-[#64ffda] h-full flex gap-3 items-center ml-7 duration-300 ease-in-out   ${
+                hoverEffects && hoverEffectCount === 4
+                  ? "w-40 pl-6 text-center"
+                  : "w-0 text-[#0a192f]"
+              }`}>
+              <span
+                className={`duration-500 ease-in-out text-center font-bold ${
+                  hoverEffectCount !== 4 && "hidden"
+                } `}>
+                Tools
+              </span>
+            </div>
+          </div>
         </div>
         <div
          data-aos="fade-left"
@@ -150,7 +177,7 @@ const Skills = () => {
           } w-[100%] relative h-[80vh] xl:h-[50vh] flex items-center justify-center`}>
           <div className="text w-full h-full">
             <div
-              className={`text absolute w-1/2 right-10 mt-40 bg-[#1b3454] ${
+              className={`text absolute w-1/3 right-10 mt-40 bg-[#1b3454] ${
                 !display && "hidden"
               } p-3 rounded-lg`}>
               {/* <CountUp end={80} /> */}
@@ -240,7 +267,7 @@ const Skills = () => {
           } w-[100%] relative h-[80vh] xl:h-[50vh] flex items-center justify-center`}>
           <div className="text w-full h-full">
             <div
-              className={`text absolute w-1/2 right-10 mt-40 bg-[#1b3454] ${
+              className={`text absolute w-1/3 right-10 mt-40 bg-[#1b3454] ${
                 !display && "hidden"
               } p-3 rounded-lg`}>
               {/* <CountUp end={80} /> */}
@@ -378,7 +405,7 @@ const Skills = () => {
           } w-[100%] relative h-[80vh] xl:h-[50vh] flex items-center justify-center`}>
           <div className="text w-full h-full">
             <div
-              className={`text absolute w-1/2 right-10 mt-40 bg-[#1b3454] ${
+              className={`text absolute w-1/3 right-10 mt-40 bg-[#1b3454] ${
                 !display && "hidden"
               } p-3 rounded-lg`}>
               {/* <CountUp end={80} /> */}
@@ -502,6 +529,96 @@ const Skills = () => {
               onMouseLeave={handleLanguagesMouseOut}
               className="text-[#c7ddf9] text-lg cursor-pointer font-bold absolute hover:text-[#64ffda] z-50 ml-64 xl:bottom-32 bottom-40">
               HTTP
+            </span>
+            <div className="text w-96 rounded-full absolute animate-spin -skew-y-12 h-96 border-2 border-[#64ffda]"></div>
+            <div className="text w-96 rounded-full absolute animate-pulse -skew-y-12 h-96 border-2 border-[#64ffda]"></div>
+            <div className="text w-96 rounded-full absolute animate-pulse -skew-x-6 h-96 border-2 border-[#64ffda]"></div>
+          </div>
+        </div>
+        <div
+         data-aos="fade-left"
+         data-aos-duration="1200"
+          className={`text ${
+            index !== 4 && "hidden"
+          } w-[100%] relative h-[80vh] xl:h-[50vh] flex items-center justify-center`}>
+          <div className="text w-full h-full">
+            <div
+              className={`text absolute w-1/3 right-10 mt-40 bg-[#1b3454] ${
+                !display && "hidden"
+              } p-3 rounded-lg`}>
+              {/* <CountUp end={80} /> */}
+              <div className="text flex items-center py-3">
+                <span className="text-[#c7ddf9] mr-3  font-bold text-lg">
+                  {languages}
+                </span>
+                <span className="text-[#64ffda] font-bold text-lg">
+                  {counts}
+                </span>
+                <RiPercentFill className="text-[#64ffda] " />
+              </div>
+              <ProgressBar
+                className="wrapper"
+                barContainerClassName="bg-[#64ffda] w-full rounded-full"
+                completedClassName=""
+                labelClassName="text-white px-4 font-bold rounded"
+                completed={counts > 0 && counts}
+                maxCompleted={100}
+              />
+            </div>
+            <div className="text w-96 rounded-full absolute animate-pulse h-96 border-2 border-[#64ffda]"></div>
+            <div className="text w-96 rounded-full absolute animate-spin skew-y-12 h-96 border-2 border-[#64ffda]"></div>
+            <div className="text w-96 rounded-full absolute animate-pulse skew-x-6 h-96 border-2 border-[#64ffda]"></div>
+            <div  data-aos="fade-left"
+              data-aos-duration="2000" className="text-center py-14 absolute text-[#64ffda] mt-32 w-36 h-36 rounded-full ml-32 border-2 border-[#64ffda] items-cent">
+              Tools
+            </div>
+            <span
+             data-aos="fade-right"
+             data-aos-duration="1200"
+              onMouseOver={() => handleLanguagesMouseHover("Git & Github", 90, 1)}
+              onMouseLeave={handleLanguagesMouseOut}
+              className="text-[#c7ddf9] text-lg cursor-pointer font-bold absolute hover:text-[#64ffda] z-50 ml-40 mt-10">
+              Git & Github
+            </span>
+            <span
+             data-aos="fade-down"
+             data-aos-duration="1200"
+              onMouseOver={() => handleLanguagesMouseHover("Command Line", 60, 2)}
+              onMouseLeave={handleLanguagesMouseOut}
+              className="text-[#c7ddf9] text-lg cursor-pointer font-bold absolute hover:text-[#64ffda] z-50 bottom-28 ml-32">
+              Command Line
+            </span>
+            <span
+             data-aos="flip-right"
+             data-aos-duration="1200"
+              onMouseOver={() => handleLanguagesMouseHover("Postman", 65, 3)}
+              onMouseLeave={handleLanguagesMouseOut}
+              className="text-[#c7ddf9] text-lg cursor-pointer font-bold absolute hover:text-[#64ffda] z-50 mt-32 ml-14">
+              Postman
+            </span>
+            <span
+             data-aos="fade-left"
+             data-aos-duration="1200"
+              onMouseOver={() => handleLanguagesMouseHover("Vs Code", 80, 4)}
+              onMouseLeave={handleLanguagesMouseOut}
+              className="text-[#c7ddf9] text-lg cursor-pointer font-bold absolute hover:text-[#64ffda] z-50 bottom-44 ml-14">
+              Vs Code
+            </span>
+            <span
+             data-aos="flip-left"
+             data-aos-duration="1200"
+              onMouseOver={() => handleLanguagesMouseHover("NPM", 85, 5)}
+              onMouseLeave={handleLanguagesMouseOut}
+              className="text-[#c7ddf9] text-lg cursor-pointer font-bold absolute hover:text-[#64ffda] z-50 ml-72 mt-32">
+              NPM
+            </span>
+            <span
+             data-aos="zoom-in-right"
+             data-aos-duration="1200"
+              onMouseOver={() => handleLanguagesMouseHover("Yarn", 80, 6)}
+              onMouseLeave={handleLanguagesMouseOut}
+              className="text-[#c7ddf9] text-lg cursor-pointer font-bold absolute hover:text-[#64ffda] z-50 ml-72 bottom-44 ">
+              Yarn
             </span>
             <div className="text w-96 rounded-full absolute animate-spin -skew-y-12 h-96 border-2 border-[#64ffda]"></div>
             <div className="text w-96 rounded-full absolute animate-pulse -skew-y-12 h-96 border-2 border-[#64ffda]"></div>
