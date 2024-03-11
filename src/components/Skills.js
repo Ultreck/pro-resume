@@ -68,23 +68,23 @@ const Skills = () => {
             data-aos="fade-left"
             data-aos-duration="1000"
             className="text my-10 h-10 relative flex items-center"
+            onMouseOver={() => handleMouseHover(1)}
+            onMouseOut={handleMouseOut}
             onClick={() => setindex(1)}>
             <GrTechnology
-              onMouseOver={() => handleMouseHover(1)}
-              onMouseOut={handleMouseOut}
               className={`hover:text-[#64ffda] cursor-pointer text-xl ${
-                index === 1 ? "text-[#64ffda]" : ""
+                index === 1 || hoverEffectCount === 1? "text-[#64ffda]" : ""
               }`}
             />
             <div
-              className={`text-[#c7ddf9] absolute border-b-2 border-[#64ffda] h-full flex gap-3 items-center ml-7 duration-300 ease-in-out   ${
+              className={`text-[#91a7c3] absolute border-b-2 border-[#64ffda] h-full flex gap-3 items-center ml-7 duration-300 ease-in-out   ${
                 hoverEffects && hoverEffectCount === 1
-                  ? "w-40 pl-6"
-                  : "w-0 text-[#0a192f]"
+                  ? "w-36 pl-7"
+                  : index === 1 ? "w-36 pl-7" : "w-0 text-[#0a192f]"
               }`}>
               <span
-                className={`duration-500 ease-in-out text-center font-bold ${
-                  hoverEffectCount !== 1 && "hidden"
+                className={`duration-500 ease-in-out cursor-pointer text-center font-bold ${
+                  hoverEffectCount !== 1 && ""
                 } `}>
                 Technologies
               </span>
@@ -94,23 +94,23 @@ const Skills = () => {
             data-aos="fade-left"
             data-aos-duration="1500"
             className="text my-10 h-10 relative flex items-center"
-            onClick={() => setindex(2)}>
-            <TbKeyframesFilled
               onMouseOver={() => handleMouseHover(2)}
               onMouseOut={handleMouseOut}
+            onClick={() => setindex(2)}>
+            <TbKeyframesFilled
               className={`hover:text-[#64ffda] cursor-pointer text-xl ${
-                index === 2 ? "text-[#64ffda]" : ""
+                index === 2 || hoverEffectCount === 2 ? "text-[#64ffda]" : ""
               }`}
             />
             <div
-              className={`text-[#c7ddf9] absolute border-b-2 border-[#64ffda] h-full flex gap-3 items-center ml-7 duration-300 ease-in-out   ${
+              className={`text-[#91a7c3] absolute border-b-2 border-[#64ffda] h-full flex gap-3 items-center ml-7 duration-300 ease-in-out   ${
                 hoverEffects && hoverEffectCount === 2
-                  ? "w-40 pl-6"
-                  : "w-0 text-[#0a192f]"
+                  ? "w-36 pl-7"
+                  : index === 2 ? "w-36 pl-7 text-[#64ffda]" : "w-0 text-[#0a192f]"
               }`}>
               <span
-                className={`duration-500 ease-in-out text-center font-bold ${
-                  hoverEffectCount !== 2 && "hidden"
+                className={`duration-500 ease-in-out text-center cursor-pointer font-bold ${
+                  hoverEffectCount !== 2 && ""
                 } `}>
                 Frameworks
               </span>
@@ -120,23 +120,23 @@ const Skills = () => {
             data-aos="fade-left"
             data-aos-duration="2000"
             className="text my-10 h-10 relative flex items-center"
-            onClick={() => setindex(3)}>
-            <BiLibrary
               onMouseOver={() => handleMouseHover(3)}
               onMouseOut={handleMouseOut}
+            onClick={() => setindex(3)}>
+            <BiLibrary
               className={`hover:text-[#64ffda] cursor-pointer text-xl ${
-                index === 3 ? "text-[#64ffda]" : ""
+                index === 3 || hoverEffectCount === 3? "text-[#64ffda]" : ""
               }`}
             />
             <div
-              className={`text-[#c7ddf9] text-center absolute border-b-2 border-[#64ffda] h-full flex gap-3 items-center ml-7 duration-300 ease-in-out   ${
+              className={`text-[#91a7c3] text-center absolute border-b-2 border-[#64ffda] h-full flex gap-3 items-center ml-7 duration-300 ease-in-out   ${
                 hoverEffects && hoverEffectCount === 3
-                  ? "w-40 pl-6 text-center"
-                  : "w-0 text-[#0a192f]"
+                  ? "w-32 pl-7 text-center"
+                  : index === 3 ? "w-32 pl-7 text-[#64ffda]" : "w-0 text-[#0a192f]"
               }`}>
               <span
-                className={`duration-500 ease-in-out text-center font-bold ${
-                  hoverEffectCount !== 3 && "hidden"
+                className={`duration-500 ease-in-out text-center cursor-pointer font-bold ${
+                  hoverEffectCount !== 3 && ""
                 } `}>
                 Libraries
               </span>
@@ -146,23 +146,23 @@ const Skills = () => {
             data-aos="fade-left"
             data-aos-duration="2000"
             className="text my-10 h-10 relative flex items-center"
-            onClick={() => setindex(4)}>
-            <BsTools 
               onMouseOver={() => handleMouseHover(4)}
               onMouseOut={handleMouseOut}
+            onClick={() => setindex(4)}>
+            <BsTools 
               className={`hover:text-[#64ffda] cursor-pointer text-xl ${
-                index === 4 ? "text-[#64ffda]" : ""
+                index === 4 || hoverEffectCount === 4 ? "text-[#64ffda]" : ""
               }`}
             />
             <div
-              className={`text-[#c7ddf9] text-center absolute border-b-2 border-[#64ffda] h-full flex gap-3 items-center ml-7 duration-300 ease-in-out   ${
+              className={`text-[#91a7c3] text-center absolute border-b-2 border-[#64ffda] h-full flex gap-3 items-center ml-7 duration-300 ease-in-out   ${
                 hoverEffects && hoverEffectCount === 4
-                  ? "w-40 pl-6 text-center"
-                  : "w-0 text-[#0a192f]"
+                  ? "w-28 pl-7"
+                  : index === 4 ? "w-28 pl-7 text-[#64ffda]" : "w-0 text-[#0a192f]"
               }`}>
               <span
-                className={`duration-500 ease-in-out text-center font-bold ${
-                  hoverEffectCount !== 4 && "hidden"
+                className={`duration-500 ease-in-out text-center cursor-pointer font-bold ${
+                  hoverEffectCount !== 4 && ""
                 } `}>
                 Tools
               </span>

@@ -4,6 +4,7 @@ import Modal from "./Modal";
 import UseHook from "./UseHook";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
 import { MdCancel } from "react-icons/md";
+import { RxCross2 } from "react-icons/rx";
 
 const Work = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,14 +13,14 @@ const Work = () => {
   const [eachDetails, setEachDetails] = useState();
   const { projects } = UseHook();
   useEffect(() => {
-    console.log(projects);
+    // console.log(projects);
     Aos.init();
   }, []);
 
   const handleModal = (project) => {
     setEachDetails(project);
     setIsOpen(true);
-    console.log(project);
+    // console.log(project);
   };
 
   const handleMouseHover = (e) => {
@@ -49,9 +50,10 @@ const Work = () => {
       <div className="text gap-5 grid-cols-1 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-10">
         {projects?.map((project, index) => (
           <div
-          data-aos="fade-up"
-          data-aos-duration="1000"
-            className={`text-white relative cursor-pointer bg-[#213048] h-80 hover:shadow-md hover:shadow-[#64ffda] rounded-lg overflow-hidden`}
+          key={project?.id}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className={`text-white relative cursor-pointer bg-[#213048] h-72 hover:shadow-lg hover:shadow-[#2c2d2d] rounded-lg overflow-hidden`}
             onMouseOut={handleMouseOut}
             onMouseOver={() => handleMouseHover(index)}
             onClick={() => handleModal(project)}>
@@ -90,13 +92,14 @@ const Work = () => {
       <div className="text">
         <Modal isOpen={isOpen} closeModal={() => setIsOpen(false)}>
           <div
+          key={eachDetails?.id}
             data-aos-duration="400"
             data-aos="zoom-in-up"
             className="inline-block align-bottom bg-[#0a192f] rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-20 sm:align-middle sm:max-w-xl sm:w-full text-gray-600">
             <span
-              className="text-black absolute right-5 bg-red-500 border-2 border-red-500 rounded-full  p-2 top-5 cursor-pointer z-50 hover:rotate-90"
+              className="text-black absolute right-5 rounded-full  p-1 top-5 cursor-pointer z-50 hover:rotate-[100deg] border-2 border-red-500 duration-100 ease-in-out"
               onClick={() => setIsOpen(false)}>
-              <MdCancel />
+              <RxCross2 className="text-red-500 font-bold text-2xl"/>
             </span>
             <div className="text h-80">
               <img
@@ -144,8 +147,10 @@ const Work = () => {
               </h1>
             </div>
             <div className="text flex">
-              <button className="flex items-center gap-3 bg-[#64ffda] absolute bottom-5 px-5 py-1 right-10 text-black font-semibold">
-                <link rel="stylesheet" href="https://school-management-system-two.vercel.app/" className="text" />Browse <FaArrowRightFromBracket className="animate-bounce" />
+              <button className="bg-[#64ffda] absolute bottom-5 px-5 py-1 right-10 text-black font-semibold">
+                <a href={eachDetails?.appUrl} className="text flex items-center gap-3">
+                  Browse <FaArrowRightFromBracket className="" />
+                </a>
               </button>
             </div>
           </div>

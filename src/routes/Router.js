@@ -11,7 +11,7 @@ const About = React.lazy(() => import(`../components/About`));
 const Skills = React.lazy(() => import(`../components/Skills`));
 const Experience = React.lazy(() => import(`../components/Experience`));
 const Work = React.lazy(() => import(`../components/Work`));
-const Contact = React.lazy(() => import(`../components/Contact`));
+// const Contact = React.lazy(() => import(`../components/Contact`));
 
 const Router = () => {
   return (
@@ -58,14 +58,14 @@ const Router = () => {
               </SuspenseContainer>
             }
           />
-          <Route
+          {/* <Route
             path="/contact"
             element={
               <SuspenseContainer>
                 <Contact />
               </SuspenseContainer>
             }
-          />
+          /> */}
         </Routes>
       </Suspense>
       <ToastContainer/>

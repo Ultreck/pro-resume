@@ -8,15 +8,17 @@ const UseHook = () => {
     {
       id: 1,
       url: sms,
+      appUrl: "https://school-management-system-two.vercel.app/",
       title: "School Management System",
       type: "Web development",
       description:
         "The School Management System web application is a comprehensive platform designed to streamline administrative tasks and enhance communication within educational institutions. Leveraging a powerful stack of technologies, including React.js, Express.js, MongoDB, Cloudinary, Socket.io, and Node.js, the system offers a robust and scalable solution for managing various aspects of school operations.",
-      tools: ["React.js", "Express.js", "MongoDB", "Cloudinary", "Socket.io", "Node.js"],
+      tools: ["React.js", "Express.js", "MongoDB", "Cloudinary", "Socket.io", "Node.js", "Mongoose"],
     },
     {
       id: 2,
       url: rma,
+      appUrl: "https://recommendation-movie-app.vercel.app/",
       title: "Recommendation Movie App",
       type: "Web development",
       description:
@@ -26,6 +28,7 @@ const UseHook = () => {
     {
       id: 3,
       url: hms,
+      appUrl: "https://medical-management-system.vercel.app/",
       title: "Hospital Management System",
       type: "Web development",
       description:

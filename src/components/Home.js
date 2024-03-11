@@ -55,7 +55,7 @@ const Home = () => {
           </p> */}
           <div className="text-center mt-5" data-aos="fade-up-left">
             <button className="text-[#64ffda] bg-[#64ffda] rounded font-mono">
-            <button className="text-[#64ffda] border border-[#64ffda] hover:-translate-x-1 transition hover:-translate-y-1 bg-[#0a192f] rounded px-6 py-4 font-mono">Check out my course!</button>
+            <button className="text-[#64ffda] border border-[#64ffda] hover:-translate-x-1 transition hover:-translate-y-1 bg-[#0a192f] rounded px-6 py-4 font-mono">Download my Cv</button>
             </button>
           </div>
         </div>
