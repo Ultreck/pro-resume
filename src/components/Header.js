@@ -98,3 +98,4 @@ const Header = ({ setIsOpen, setTabName, setnavigation }) => {
 };
 
 export default Header;
+                                  

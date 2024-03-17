@@ -585,7 +585,7 @@ const Skills = () => {
              data-aos-duration="1200"
               onMouseOver={() => handleLanguagesMouseHover("Command Line", 60, 2)}
               onMouseLeave={handleLanguagesMouseOut}
-              className="text-[#c7ddf9] bottom-64 md:text-lg cursor-pointer font-bold absolute hover:text-[#64ffda] z-50 md:bottom-28 md:ml-40">
+              className="text-[#c7ddf9] mt-60 md:text-lg cursor-pointer font-bold absolute hover:text-[#64ffda] z-50 xl:bottom-24 md:bottom-28 md:ml-40">
               Command Line
             </span>
             <span
