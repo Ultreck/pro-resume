@@ -10,7 +10,7 @@ const Experience = () => {
 
   return (
     <div>
-      <div className="text md:mt-20 mt-10 md:p-5 pb-20">
+      <div className="text md:mt-20 mt-14 md:p-5 pb-20">
         <div className="text flex items-center">
           <h1
             data-aos="fade-down"

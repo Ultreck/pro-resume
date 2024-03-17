@@ -11,7 +11,6 @@ const Header = ({ setIsOpen, setTabName, setnavigation }) => {
   const navigate = useNavigate();
   const [hoverEffects, setHoverEffects] = useState(false);
 
-
   return (
     <div>
       <nav className="text bg-[#0a192f] shadow-xl fixed top-0 z-[100] w-full hidden md:flex items-center justify-between px-10 h-20">
@@ -88,8 +87,11 @@ const Header = ({ setIsOpen, setTabName, setnavigation }) => {
           ))}
         </ul>
       </nav>
-      <div className="text-[#64ffda] md:hidden  fixed right-3 top-5 text-3xl">
-        <HiOutlineBars3BottomRight onClick={() =>setnavigation(true)}/>
+      <div className="text-[#64ffda] flex justify-between w-full px-3 md:hidden  fixed right-0 top-3 text-3xl">
+        <div className="text">
+          <TbHexagonLetterE  onClick={() => navigate("/")} className="text-[#64ffda] w-9 h-9 z-50" />
+        </div>
+        <HiOutlineBars3BottomRight onClick={() => setnavigation(true)} />
       </div>
     </div>
   );

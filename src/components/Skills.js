@@ -48,7 +48,7 @@ const Skills = () => {
     setcounts(20);
   };
   return (
-    <div className="text-gray-500 mt-10 md:mt-20 pb-32 md:p-5">
+    <div className="text-gray-500 mt-14 md:mt-20 pb-32 px-8 py-3 self-center">
       <div className="text flex items-center">
         <h1
           data-aos="fade-down"
@@ -243,7 +243,7 @@ const Skills = () => {
              data-aos-duration="1200"
               onMouseOver={() => handleLanguagesMouseHover("HTML5", 85, 5)}
               onMouseLeave={handleLanguagesMouseOut}
-              className="text-[#c7ddf9] mt-20 right-14 md:right-auto md:text-lg cursor-pointer font-bold absolute hover:text-[#64ffda] z-50 md:ml-72 md:mt-32">
+              className="text-[#c7ddf9] mt-20 right-8 md:right-auto md:text-lg cursor-pointer font-bold absolute hover:text-[#64ffda] z-50 md:ml-72 md:mt-32">
               HTML5
             </span>
             <span
@@ -251,7 +251,7 @@ const Skills = () => {
              data-aos-duration="1200"
               onMouseOver={() => handleLanguagesMouseHover("CSS3", 80, 6)}
               onMouseLeave={handleLanguagesMouseOut}
-              className="text-[#c7ddf9] mt-40 right-14 md:right-auto md:text-lg cursor-pointer font-bold absolute hover:text-[#64ffda] z-50 md:ml-72 md:bottom-44 ">
+              className="text-[#c7ddf9] mt-40 right-7 md:right-auto md:text-lg cursor-pointer font-bold absolute hover:text-[#64ffda] z-50 md:ml-72 md:bottom-44 ">
               CSS3
             </span>
             <div className="text md:w-96 w-72 rounded-full absolute animate-spin -skew-y-12 md:h-96 h-72 border-2 border-[#64ffda]"></div>
@@ -543,7 +543,7 @@ const Skills = () => {
           } w-[100%] relative h-[80vh] xl:h-[50vh] flex items-center justify-center`}>
           <div className="text w-full h-full py-5 md:grid flex justify-center">
             <div
-              className={`text absolute w-1/3 right-10 mt-40 bg-[#1b3454] ${
+              className={`text absolute md:w-1/3 md:right-10 md:mt-40 bottom-24 w-full bg-[#1b3454] ${
                 !display && "hidden"
               } p-3 rounded-lg`}>
               {/* <CountUp end={80} /> */}
@@ -609,7 +609,7 @@ const Skills = () => {
              data-aos-duration="1200"
               onMouseOver={() => handleLanguagesMouseHover("NPM", 85, 5)}
               onMouseLeave={handleLanguagesMouseOut}
-              className="text-[#c7ddf9] mt-20 right-14 md:right-auto md:text-lg cursor-pointer font-bold absolute hover:text-[#64ffda] z-50 md:ml-72 md:mt-32">
+              className="text-[#c7ddf9] mt-20 right-9 md:right-auto md:text-lg cursor-pointer font-bold absolute hover:text-[#64ffda] z-50 md:ml-72 md:mt-32">
               NPM
             </span>
             <span
@@ -617,7 +617,7 @@ const Skills = () => {
              data-aos-duration="1200"
               onMouseOver={() => handleLanguagesMouseHover("Yarn", 80, 6)}
               onMouseLeave={handleLanguagesMouseOut}
-              className="text-[#c7ddf9] mt-40 right-14 md:right-auto md:text-lg cursor-pointer font-bold absolute hover:text-[#64ffda] z-50 md:ml-72 md:bottom-44 ">
+              className="text-[#c7ddf9] mt-40 right-8 md:right-auto md:text-lg cursor-pointer font-bold absolute hover:text-[#64ffda] z-50 md:ml-72 md:bottom-44 ">
               Yarn
             </span>
             <div className="text md:w-96 w-72 rounded-full absolute animate-spin -skew-y-12 md:h-96 h-72 border-2 border-[#64ffda]"></div>

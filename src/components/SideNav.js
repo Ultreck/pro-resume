@@ -11,33 +11,33 @@ const SideNav = () => {
     {
       url: "https://github.com/Ultreck",
       name: "Github",
-      className: "text-[#8bada5] hover:text-black hover:bg-red-600 hover:shadow-md hover:shadow-red-600",
+      className: "text-[#c7ddf9] hover:text-black hover:bg-red-600 hover:shadow-md hover:shadow-red-600",
       icon: <FaGithub />,
     },
     {
       url: "https://www.linkedin.com/in/a-emmanuel-oluwatayese-39254b218/",
       name: "LinkedIn",
       className:
-        "text-[#8bada5] hover:text-black hover:bg-sky-600 hover:shadow-md hover:shadow-blue-600",
+        "text-[#c7ddf9] hover:text-black hover:bg-sky-600 hover:shadow-md hover:shadow-blue-600",
       icon: <AiFillLinkedin />,
     },
     {
       url: "https://wa.me/qr/6VF2TF3N3PN7G1",
       name: "WhatsApp",
-      className: "text-[#8bada5] hover:text-black hover:bg-green-600 hover:shadow-md hover:shadow-green-600",
+      className: "text-[#c7ddf9] hover:text-black hover:bg-green-600 hover:shadow-md hover:shadow-green-600",
       icon: <FaWhatsappSquare />,
     },
     {
       url: "https://www.instagram.com/emmanuel_oluwatayese?igsh=MTR5ajhpcGJmazh1ZA==",
       name: "Instagram",
-      className: "text-[#8bada5] hover:text-black hover:bg-pink-600 hover:shadow-md hover:shadow-pink-600",
+      className: "text-[#c7ddf9] hover:text-black hover:bg-pink-600 hover:shadow-md hover:shadow-pink-600",
       icon: <FaInstagramSquare />,
     },
     {
       url: "https://www.facebook.com/emmanuel.oluwatayese",
       name: "Facebook",
       className:
-        "text-[#8bada5] hover:text-black hover:bg-sky-600 hover:shadow-md hover:shadow-sky-600",
+        "text-[#c7ddf9] hover:text-black hover:bg-sky-600 hover:shadow-md hover:shadow-sky-600",
       icon: <FaFacebook />,
     },
     {
@@ -45,7 +45,7 @@ const SideNav = () => {
       name: "Tweeter(X)",
       className:
         "text-blue-500 hover:text-black hover:bg-sky-600 hover:shadow-md hover:shadow-blue-600",
-      icon: <img src={tweeter} alt="" className="text-[#8bada5] p-1" />,
+      icon: <img src={tweeter} alt="" className="text-[#c7ddf9] p-1" />,
     },
   ];
   return (

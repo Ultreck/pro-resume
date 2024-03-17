@@ -30,6 +30,16 @@ function App() {
     Aos.init();
   }, []);
 
+  // useEffect(() => {
+  //   const setFavicon = () => {
+  //     const favicon = document.querySelector("link[rel='icon']");
+  //     if (favicon) {
+  //       favicon.setAttribute('href', 'data:image/x-icon;base64,' + btoa(<TbHexagonLetterE />));
+  //     }
+  //   };
+  //   setFavicon();
+  // }, []);
+
   return (
     <div className="bg-[#0a192f] w-full overflow-hidden">
       <Header
@@ -322,5 +332,7 @@ function App() {
     </div>
   );
 }
-
+// document.querySelector("link[rel='icon']").setAttribute('href', 'data:image/x-icon;base64,' + btoa(
+//   <TbHexagonLetterE />
+// ));
 export default App;
