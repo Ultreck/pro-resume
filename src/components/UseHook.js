@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import hms from "../images/HManagementSys.png";
 import sms from "../images/SManagementSys.png";
 import rma from "../images/moviesApp.png";
+import { useReactToPrint } from "react-to-print";
+import { toast } from "react-toastify";
 
 const UseHook = () => {
+  const resumeContents = useRef(null);
+  const [isOpen, setIsOpen] = useState(false);
   const projects = [
     {
       id: 1,
@@ -36,8 +40,20 @@ const UseHook = () => {
       tools: ["React.js", "Firebase"],
     },
   ];
+
+  const downloadPDF = useReactToPrint({
+    content: () => resumeContents.current,
+    documentTitle: "A. Emmanuel Oluwatayese",
+    onAfterPrint: () => {
+      toast.info("Data saved in PDF");
+    },
+  });
   return {
     projects,
+    downloadPDF,
+    resumeContents,
+    setIsOpen,
+    isOpen,
   };
 };
 

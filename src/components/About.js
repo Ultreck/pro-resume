@@ -13,20 +13,41 @@ const About = () => {
         sethover(true);
     };
   return (
-    <div className=" p-5 mt-20">
-      <div data-aos="fade-up" data-aos-duration="500" className="text w-full h-screen ">
+    <div className=" p-5 md:mt-28 my-12 ">
+      <div data-aos="fade-up" data-aos-duration="500" className="text w-full md:h-screen ">
         <div className="text flex items-center">
-          <h1 data-aos="fade-down" data-aos-duration="1000"  className="text-[#c7ddf9] font-bold text-3xl mr-7 border-l-4 px-5 border-[#64ffda]">
+          <h1 data-aos="fade-down" data-aos-duration="1000"  className="text-[#c7ddf9] font-bold md:text-3xl text-2xl md:mr-7 border-l-4 px-5 border-[#64ffda]">
             {" "}
             {/* <span className="text-[#64ffda] text-2xl font-mono font-extralight">
               01.
             </span>{" "} */}
             About Me
           </h1>
-          <hr className="w-60 border-[#233554]" />
+          <hr className="md:w-60 border-[#233554]" />
         </div>
-        <div className="text-[#7f8fb0] mt-6 text-sm flex gap-6">
-          <div className="text w-3/5">
+        <div className="text-[#7f8fb0] mt-6 text-sm md:flex">
+        <div className="text w-full md:hidden p-3">
+            <div onMouseOver={() => sethover(true)} onMouseOut={() =>sethover(false)} className="text border-2 w-full md:hidden rounded border-[#64ffda] hover:translate-x-1 hover:translate-y-1 transition duration-300  ease-in-out">
+              <div className={` ${hover? "-translate-x-2 ease-in-out transition duration-200  -translate-y-2" : "ease-in-out transition duration-200"}`}>
+                {hover ? 
+                <img
+                  src={img2}
+                  alt=""
+                  className={`text -translate-x-3 -translate-y-3  rounded`}
+                  style={{ filter: "brightness(1o0%) saturate(60%) hue-rotate(10deg)"}}
+                />
+                :
+                <img
+                  src={img}
+                  alt=""
+                  className="text -translate-x-3 -translate-y-3 hover:-translate-x-4 hover:-translate-y-4  rounded"
+                  style={{ filter: "brightness(1o0%) saturate(60%) hue-rotate(10deg)"}}
+                />
+            }
+              </div>
+            </div>
+          </div>
+          <div className="text md:w-3/5 ">
             <p className="text mb-4" data-aos="fade-right" data-aos-duration="1500" >
               I'm a passionate full-stack web developer with a journey that
               began in <span className="text-[#64ffda]">2019</span>. Over the
@@ -63,8 +84,8 @@ const About = () => {
               ideas to life with cutting-edge web solutions that make an impact.
             </p>
           </div>
-          <div className="text w-2/5 p-5">
-            <div onMouseOver={() => sethover(true)} onMouseOut={() =>sethover(false)} className="text border-2 lg:w-2/3 rounded border-[#64ffda] hover:translate-x-1 hover:translate-y-1 transition duration-300  ease-in-out">
+          <div className="text md:w-2/5 p-5">
+            <div onMouseOver={() => sethover(true)} onMouseOut={() =>sethover(false)} className="text border-2 md:w-2/3 hidden md:flex rounded border-[#64ffda] hover:translate-x-1 hover:translate-y-1 transition duration-300  ease-in-out">
               <div className={` ${hover? "-translate-x-2 ease-in-out transition duration-200  -translate-y-2" : "ease-in-out transition duration-200"}`}>
                 {hover ? 
                 <img

@@ -3,25 +3,18 @@ import img from "../images/icon-144x144 (1).png";
 import { NavLink, useNavigate } from "react-router-dom";
 import img2 from "../images/pro-pro.png";
 import { TbHexagonLetterE } from "react-icons/tb";
+import { HiOutlineBars3BottomRight } from "react-icons/hi2";
+import data from "../data";
 // import { ClipPath } from 'clip-path';
 
-const Header = ({ setIsOpen, setTabName }) => {
+const Header = ({ setIsOpen, setTabName, setnavigation }) => {
   const navigate = useNavigate();
   const [hoverEffects, setHoverEffects] = useState(false);
-  // const handleOnmounseOver = () => {};
-  // const handleOnmounseLeave = () => {};
-  const items = [
-    { funct: false, route: "/", name: "Home", no: "01." },
-    { funct: false, route: "/about", name: "About", no: "02." },
-    { funct: false, route: "/experiences", name: "Experience", no: "03." },
-    { funct: false, route: "/skills", name: "Skills", no: "04." },
-    { funct: false, route: "/works", name: "Work", no: "05." },
-    { funct: true, route: "/contact", name: "Contact", no: "06." },
-    { funct: true, route: "/cvs", name: "Resume", no: "07. ", border: true },
-  ];
+
+
   return (
     <div>
-      <nav className="text bg-[#0a192f] shadow-xl fixed top-0 z-[100] w-full flex items-center justify-between px-10 h-20">
+      <nav className="text bg-[#0a192f] shadow-xl fixed top-0 z-[100] w-full hidden md:flex items-center justify-between px-10 h-20">
         <div
           className="text cursor-pointer relative flex"
           onMouseOver={() => setHoverEffects(true)}
@@ -60,7 +53,7 @@ const Header = ({ setIsOpen, setTabName }) => {
           </div>
         </div>
         <ul className="text-sm font-mono flex gap-3">
-          {items.map((item, i) => (
+          {data.map((item, i) => (
             <li
               className="text"
               key={item?.no}
@@ -95,6 +88,9 @@ const Header = ({ setIsOpen, setTabName }) => {
           ))}
         </ul>
       </nav>
+      <div className="text-[#64ffda] md:hidden  fixed right-3 top-5 text-3xl">
+        <HiOutlineBars3BottomRight onClick={() =>setnavigation(true)}/>
+      </div>
     </div>
   );
 };

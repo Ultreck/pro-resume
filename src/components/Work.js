@@ -32,19 +32,19 @@ const Work = () => {
   };
 
   return (
-    <div className="text-gray-500 mt-20 pb-32 p-5">
+    <div className="text-gray-500 md:mt-20 mt-10 pb-32 md:p-5">
       <div className="text flex items-center">
         <h1
           data-aos="fade-down"
           data-aos-duration="1500"
-          className="text-[#c7ddf9] font-bold text-3xl mr-7 border-l-4 px-5 border-[#64ffda]">
+          className="text-[#c7ddf9] font-bold md:text-3xl text-2xl md:mr-7 border-l-4 px-5 border-[#64ffda]">
           {" "}
           {/* <span className="text-[#64ffda] text-2xl font-mono font-extralight">
               01.
             </span>{" "} */}
           My Projects
         </h1>
-        <hr className="w-60 border-[#233554]" />
+        <hr className="w-60 hidden md:flex border-[#233554]" />
       </div>
 
       <div className="text gap-5 grid-cols-1 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-10">
@@ -53,7 +53,7 @@ const Work = () => {
           key={project?.id}
             data-aos="fade-up"
             data-aos-duration="1000"
-            className={`text-white relative cursor-pointer bg-[#213048] h-72 hover:shadow-lg hover:shadow-[#2c2d2d] rounded-lg overflow-hidden`}
+            className={`text-white relative cursor-pointer bg-[#213048] md:h-72 hover:shadow-lg hover:shadow-[#2c2d2d] rounded-lg overflow-hidden`}
             onMouseOut={handleMouseOut}
             onMouseOver={() => handleMouseHover(index)}
             onClick={() => handleModal(project)}>
