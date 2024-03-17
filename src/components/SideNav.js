@@ -49,8 +49,8 @@ const SideNav = () => {
     },
   ];
   return (
-    <div className="fixed w-10 md:w-20 md:mt-24   h-[80vh]">
-      <div className="text md:mt-24 mt-72">
+    <div className="fixed w-10 md:w-20 md:mt-24 -bottom-48  h-[80vh]">
+      <div className="text md:mt-24">
         {socialWebsites?.map((site, index) => (
           <>
             <div key={site?.name} className="text-center my-3 mx-auto md:text-2xl flex justify-center">
@@ -73,7 +73,7 @@ const SideNav = () => {
           <FaFacebook />
         </div> */}
       </div>
-      <hr className="w-60 border-[#69768d] -ml-24 md:-ml-20 md:mt-40 mt-28 absolute rotate-90 md:bottom-0.5" />
+      <hr className="w-60 border-[#69768d] -ml-24 md:-ml-20 md:mt-40 mt-28 absolute rotate-90 " />
     </div>
   );
 };
