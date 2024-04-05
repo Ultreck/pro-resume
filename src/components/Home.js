@@ -47,7 +47,7 @@ const Home = () => {
             data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="1000"
-            className="text-[#d9eaff]  md:text-6xl text-3xl font-bold mt-5 mb-4">
+            className="text-[#d9eaff] h-20 md:text-6xl text-3xl font-bold mt-5 mb-4">
             A. <span className="text" ref={el}></span>
           </h1>
           <h2
