@@ -14,7 +14,7 @@ const NavigationBar = ({ setnavigation, setIsOpen, setTabName }) => {
       <div className="text-end flex justify-end">
         <RxCross2
           onClick={() => setnavigation(false)}
-          className="text-[#64ffda] mt-3 mr-5 text-2xl font-bold"
+          className="text-[#64ffda] mt-5 mr-5 text-2xl font-bold"
         />
       </div>
       <ul className="text-sm font-mono text-center mt-16">
