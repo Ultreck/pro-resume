@@ -10,11 +10,11 @@ const NavigationBar = ({ setnavigation, setIsOpen, setTabName }) => {
     <div
     //   data-aos-duration="500"
     //   data-aos="fade-right"
-      className="w-3/4 h-screen fixed z-50 text-end">
-      <div className="text">
+      className="w-full h-screen fixed z-50 text-end">
+      <div className="text-end flex justify-end">
         <RxCross2
           onClick={() => setnavigation(false)}
-          className="text-[#64ffda] mt-2 ml-2 text-2xl font-bold"
+          className="text-[#64ffda] mt-3 mr-5 text-2xl font-bold"
         />
       </div>
       <ul className="text-sm font-mono text-center mt-16">

@@ -61,7 +61,7 @@ function App() {
           <div
             data-aos-duration="500"
             data-aos="fade-left"
-            className="text w-3/4 h-screen right-0 border border-gray-700 fixed z-[1000] bg-[#0a192f]">
+            className="text w-3/4  h-screen right-0 border border-gray-700 fixed z-[1000] bg-[#0a192f]">
             <NavigationBar
               setnavigation={setnavigation}
               setIsOpen={setIsOpen}
